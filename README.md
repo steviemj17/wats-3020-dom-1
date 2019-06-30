@@ -112,7 +112,7 @@ The Final Display is the same for both the #1 & #2 TODO lists, even though #1 is
 
 
 1. **1-todo-vanilla** 
-  - TODO add "DOMContentLoaded" event to listen for to signal that DOM is ready to acces
+  - TODO add "DOMContentLoaded" event to listen for to signal that DOM is ready to access
   - TODO add event listener to signal that user is submitting form.  You must "wrap" all existing code in this event
   ```JavaScript
   document.addEventListener("submit", event => {
@@ -144,13 +144,43 @@ The Final Display is the same for both the #1 & #2 TODO lists, even though #1 is
   }
 })
 ```
+- TODO set up a checkbox toggle to strike out text when clicked.  Note the difference in how we detect that the checkbox has changed and then whether it was checked or not.
+```JavaScript
+$(':checkbox').change(function (event) {
+    event.preventDefault()
+    if ($(this).is(':checked')) {
+      $(this).siblings("label").css("text-decoration", "line-through")
+    } else {
+      $(this).siblings("label").css("text-decoration", "none")
+    }
+})
+```
 
 2. **2-todo-jquery** 
 
-  - TODO 
-
-</div>
-
+  - TODO add document ready `$(document).ready`
+  - TODO add event listener to signal that user is submitting form.  You must "wrap" all code related to user clicking submit in this event
+  ```JavaScript
+  $("#todo-form").submit(event => {
+    //all code here
+  })
+  ```
+  - call a function to prevent the click from "bubbling up"
+  ```JavaScript
+    event.preventDefault()
+  ```
+  - TODO obtain the user input object and string value   
+  ```JavaScript
+    let itemInput = $($("input[name=item-input]")[0])
+    let itemValue = itemInput.val()
+  ```
+  - TODO create a new list item value with checkbox and label
+  ```JavaScript
+    let newItemEl = $("<li>")[0]
+    let newCheckBox = $('<input type="checkbox" />')[0]
+    let newLabel = $(`<label>`).html(itemValue)[0]
+    newItemEl.append(newCheckBox, newLabel)
+  ``` 
 3. **3-list** 
 
   - TODO 

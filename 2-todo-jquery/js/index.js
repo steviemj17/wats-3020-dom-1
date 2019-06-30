@@ -1,29 +1,29 @@
-$(document).ready(event => {
-  //need to add an ID to easily select form
+//TODO add document ready function
+(event => {
+  //TODO wrap all code related to user submit  
   $("#todo-form").submit(event => {
-    event.preventDefault()
+    //TODO add code to keep event from "bubbling up"
+
     //need to find a single input but need it as a jquery object
-    let itemInput = $($("input[name=item-input]")[0])
-    let itemValue = itemInput.val()
+    //TODO obtain the user input object and string value
+    
+
+    //check that user has input a value before proceeding
     if (itemValue.length !== 0) {
 
       //create new item
-      let newItemEl = $("<li>")[0]
-      let newCheckBox = $('<input type="checkbox" />')[0]
-      let newLabel = $(`<label>`).html(itemValue)[0]
-      newItemEl.append(newCheckBox, newLabel)
+      // TODO create a new list item value with checkbox and label
+  
 
-      //get a reference to list and append
+      //get a reference to list and append list item
       $('.todo-list')[0].appendChild(newItemEl);
+
+      //clear user input
       itemInput.val('')
-      $(':checkbox').change(function (event) {
-          event.preventDefault()
-          if ($(this).is(':checked')) {
-            $(this).siblings("label").css("text-decoration", "line-through")
-          } else {
-            $(this).siblings("label").css("text-decoration", "none")
-          }
-      })
+
+      //set up toggle on check box click
+      //TODO set up a checkbox toggle to strike out text when clicked
+      
     }
   })
 })
