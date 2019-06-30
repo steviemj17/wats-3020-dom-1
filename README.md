@@ -92,28 +92,63 @@ jQuery
 Script tags
 JavaScript Events
 Document object
+createElement,append, appendChild, innerHTML,nextSibling
+
 
 ## Basic Requirements
 Fork this repository.
+Replace TODO's with code that will create a TODO list.  
 
- 
+### Features of the TODO list
+* User enters an activity and presses the button or enter key to add to list
+* User clicks the check box to cross out an item when its complete
+* Checkbox acts as a toggle so that if it is already checked, clicking it will un-check it
 
-1. **1-todo-vanilla** 
-  - TODO
-
-  
+The Final Display is the same for both the #1 & #2 TODO lists, even though #1 is created with Vanilla JS only and #2 uses jQuery.
 **Final Display**
 <div>
-<img src="./images/" style="display:inline-block;border:1px solid black" width="300" />
+<img src="./images/todo-list.png" style="display:inline-block;border:1px solid black" width="300" />
 </div>
 
+
+1. **1-todo-vanilla** 
+  - TODO add "DOMContentLoaded" event to listen for to signal that DOM is ready to acces
+  - TODO add event listener to signal that user is submitting form.  You must "wrap" all existing code in this event
+  ```JavaScript
+  document.addEventListener("submit", event => {
+    //all code here
+  })
+  ```
+  - call a function to prevent the click from "bubbling up"
+  ```JavaScript
+    event.preventDefault()
+```
+- TODO add a selector that selects the input element with the attribute name equal to "item-input" `"input[name=item-input]"`
+- TODO create a list item with a checkbox and a label containing the user input string
+```JavaScript
+  let newItemEl = document.createElement('li');
+  let newCheckBox = document.createElement('input')
+  newCheckBox.setAttribute("type", "checkbox")
+  newItemEl.appendChild(newCheckBox)
+  let newLabel = document.createElement('label')
+  newLabel.innerHTML = itemValue
+  newItemEl.appendChild(newLabel)
+```
+- TODO add click event toggle that strikes out text in label associated with list item
+```JavaScript
+ newCheckBox.addEventListener("click", function (event) {
+  if (this.nextSibling.style.textDecoration === "line-through") {
+    this.nextSibling.style.textDecoration = ""
+  } else {
+    this.nextSibling.style.textDecoration = "line-through"
+  }
+})
+```
 
 2. **2-todo-jquery** 
 
   - TODO 
-**Final Display**
-<div>
-<img src="./images/fetch-internet.png" style="display:inline-block;border:1px solid black" width="300" />
+
 </div>
 
 3. **3-list** 

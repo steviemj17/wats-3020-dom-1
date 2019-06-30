@@ -2,7 +2,7 @@ $(document).ready(event => {
   //need to add an ID to easily select form
   $("#todo-form").submit(event => {
     event.preventDefault()
-    //need to fina a single input but need it as a jquery object
+    //need to find a single input but need it as a jquery object
     let itemInput = $($("input[name=item-input]")[0])
     let itemValue = itemInput.val()
     if (itemValue.length !== 0) {
