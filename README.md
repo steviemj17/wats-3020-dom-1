@@ -87,17 +87,17 @@ It is a best practice to move JavaScript into an external file.  If I have a fil
 
 
 ## Project Resources
-Vanilla JavaScript
-jQuery
-Script tags
-JavaScript Events
-Document object
-createElement,append, appendChild, innerHTML,nextSibling
+[MDN Vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[jQuery](https://jquery.com/)
+[MDN Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+[MDN JavaScript Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+[W3 Schools document](https://www.w3schools.com/js/js_htmldom_document.asp)
+
 
 
 ## Basic Requirements
 Fork this repository.
-Replace TODO's with code that will create a TODO list.  
+Replace TODO's with code that will create a TODO list.    
 
 ### Features of the TODO list
 * User enters an activity and presses the button or enter key to add to list
@@ -182,26 +182,20 @@ $(':checkbox').change(function (event) {
     newItemEl.append(newCheckBox, newLabel)
   ``` 
 3. **3-list** 
+  TODO: For this exercise you must set up HTML/CSS/JavaScript files and write code to create a list.  Once you've completed the lists above, you an use that code to help you do this.  
 
-  - TODO 
+  You can use jQuery or Vanilla JS.  Make some visible modification to the list such as labels or effects applied when a label or check box is clicked.  For example you can highlight the text by adding a background color.
 
-**Final Display**
-<div>
-<img src="./images/.png" style="display:inline-block;border:1px solid black" width="300" />
-</div>  
+  You could also include a button associated with each list item to remove it from the list.
 
-
-## Stretch Goals
-1. 
-2. 
 
 ## Turn in assignment
-Push your code to the forked repository in your account and create a pull request.  This will make it available for instructor code review.  
+Push your code to the forked repository in your account and **create a pull request**.  This will make it available for instructor code review.  
 
 Turn in 2 URL's on Canvas which should be of the format:
 * https://github.com/{account name}/{repo name}
 * https://{account name}.github.com/{repo name}
 
-## Attributes
+
 
 
