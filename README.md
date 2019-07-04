@@ -95,9 +95,10 @@ It is a best practice to move JavaScript into an external file.  If I have a fil
 
 
 
-## Basic Requirements
+## Tutorials
 Fork this repository.
-Replace TODO's with code that will create a TODO list.    
+Replace TODO's with code that will create a TODO list.  
+    
 
 ### Features of the TODO list
 * User enters an activity and presses the button or enter key to add to list
@@ -190,7 +191,7 @@ $(':checkbox').change(function (event) {
 
 
 ## Turn in assignment
-Push your code to the forked repository in your account and **create a pull request**.  This will make it available for instructor code review.  
+Push your code to the forked repository in your account and [**create a pull request**](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork).  This will make it available for instructor code review.  
 
 Turn in 2 URL's on Canvas which should be of the format:
 * https://github.com/{account name}/{repo name}
