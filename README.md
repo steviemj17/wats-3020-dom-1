@@ -87,14 +87,14 @@ It is a best practice to move JavaScript into an external file.  If I have a fil
 
 
 ## Project Resources
-[MDN Vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[jQuery](https://jquery.com/)
-[MDN Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
-[MDN JavaScript Events](https://developer.mozilla.org/en-US/docs/Web/Events)
-[W3 Schools document](https://www.w3schools.com/js/js_htmldom_document.asp)
+* [MDN Vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [jQuery](https://jquery.com/)
+* [MDN Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+* [MDN JavaScript Events](https://developer.mozilla.org/en-US/docs/Web/Events)
+* [W3 Schools document](https://www.w3schools.com/js/js_htmldom_document.asp)
 
 
-
+* * *
 ## Tutorials
 Fork this repository.
 Replace TODO's with code that will create a TODO list.  
@@ -112,7 +112,7 @@ The Final Display is the same for both the #1 & #2 TODO lists, even though #1 is
 </div>
 
 
-1. **1-todo-vanilla** 
+**1-todo-vanilla** 
   - TODO add "DOMContentLoaded" event to listen for to signal that DOM is ready to access
   - TODO add event listener to signal that user is submitting form.  You must "wrap" all existing code in this event
   ```JavaScript
@@ -145,19 +145,9 @@ The Final Display is the same for both the #1 & #2 TODO lists, even though #1 is
   }
 })
 ```
-- TODO set up a checkbox toggle to strike out text when clicked.  Note the difference in how we detect that the checkbox has changed and then whether it was checked or not.
-```JavaScript
-$(':checkbox').change(function (event) {
-    event.preventDefault()
-    if ($(this).is(':checked')) {
-      $(this).siblings("label").css("text-decoration", "line-through")
-    } else {
-      $(this).siblings("label").css("text-decoration", "none")
-    }
-})
-```
 
-2. **2-todo-jquery** 
+
+**2-todo-jquery** 
 
   - TODO add document ready `$(document).ready`
   - TODO add event listener to signal that user is submitting form.  You must "wrap" all code related to user clicking submit in this event
@@ -182,20 +172,32 @@ $(':checkbox').change(function (event) {
     let newLabel = $(`<label>`).html(itemValue)[0]
     newItemEl.append(newCheckBox, newLabel)
   ``` 
-3. **3-list** 
-  TODO: For this exercise you must set up HTML/CSS/JavaScript files and write code to create a list.  Once you've completed the lists above, you an use that code to help you do this.  
+  - TODO set up a checkbox toggle to strike out text when clicked.  Note the difference in how we detect that the checkbox has changed and then whether it was checked or not.
+```JavaScript
+$(':checkbox').change(function (event) {
+    event.preventDefault()
+    if ($(this).is(':checked')) {
+      $(this).siblings("label").css("text-decoration", "line-through")
+    } else {
+      $(this).siblings("label").css("text-decoration", "none")
+    }
+})
+```
+**3-list** 
+  - TODO: For this exercise you must set up HTML/CSS/JavaScript files and write code to create a list.  Once you've completed the lists above, you an use that code to help you do this.  
 
-  You can use jQuery or Vanilla JS.  Make some visible modification to the list such as labels or effects applied when a label or check box is clicked.  For example you can highlight the text by adding a background color.
+  - Once you have to current list working, modify the code such that when you click on the list to indicate done, it move the item to a "Done" list that you'll add to your HTML.  The "Done" list doesn't need to be in the form as it will not change. 
 
-  You could also include a button associated with each list item to remove it from the list.
+  You can use jQuery or Vanilla JS.  
+  You can change the checkbox and it's listener to a done button if you want.  
 
 
 ## Turn in assignment
-Push your code to the forked repository in your account and [**create a pull request**](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork).  This will make it available for instructor code review.  
+Push your code to the forked repository in your account.  
 
 Turn in 2 URL's on Canvas which should be of the format:
 * https://github.com/{account name}/{repo name}
-* https://{account name}.github.com/{repo name}
+* https://{account name}.github.io/{repo name}
 
 
 
