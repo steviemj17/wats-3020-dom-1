@@ -55,7 +55,7 @@ Web pages serve as interactive graphical user interfaces (GUIs).  Because GUI's 
 
 The simplest event to consider is the user clicking on a button.  In this assignment, we'll use JavaScript to allow a user to build up a list by entering data into an input field and clicking on a button. The list will be updated on the page as the user enter data.   
 
-### Events and Event Handlers
+## Events and Event Handlers
 There are many events that can be detected and acted on in the browser.  The code that processes an event is often referred to as a "handler".  The handler is a JavaScript function which by default receives and event argument.  The code below shows setting up a `click` handler using Vanilla JavaScript.  Familiarize yourself with this pattern of detecting an event and calling a function to "do something" in response.
 ```JavaScript
 document.addEventListener("click", function(event) => {
@@ -68,7 +68,11 @@ You may also see the listener attached with an arrow function.  Remember that th
 
 You can see a demo of the effect on `this` by running the code in **demo-function-vs-arrow** and at the console looking the console.
 
-#### Script tag
+## Forms
+Form are used to collect data.  An HTML element like a button can be programmed to submit a form.  The convention is to provide a name attribute for each element in the form that acts as a an identifier for the data.  Forms were initially designed to submit data to a server, but as JavaScript became the norm a lot of data is handed off to the server via API's, which will look more closely at in a future module.  
+A form is created using the `<form></form>` tag and if an element has a `type="submit"` attribute it will fire a `submit` event when clicked.  
+
+## Script tag
 In order to use JavaScript in a web page the JavaScript must be added to the HTML file using the `<script>` tag.  It also possible to add JavaScript commands to and HTML file as event handler attributes in an HTML tag, but in this course, and as best practice, its good to separate JavaScript from HTML and the `<script>` tag helps developers to that.
 
 You will generally find the **script** tag at the bottom of the HTML rendered content, just above the body tag.  If you are providing multiple script tags and there is any dependency among them, the order matters.  The dependent code must follow and code that it is dependent on.
@@ -92,6 +96,8 @@ It is a best practice to move JavaScript into an external file.  If I have a fil
 * [MDN Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 * [MDN JavaScript Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 * [W3 Schools document](https://www.w3schools.com/js/js_htmldom_document.asp)
+* [MDN Form Element Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Forms)
+* [How HTML Forms Work](http://javascript-coder.com/html-form/html-form-tutorial-p1.phtml)
 
 
 * * *
