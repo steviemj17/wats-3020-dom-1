@@ -1,4 +1,9 @@
 # WATS 3020: Document Object Model 1
+
+### **Walkthrough Video**
+[DOM-1](https://www.youtube.com/watch?v=YY3waj6AADg)
+***
+
 ## Dynamic HTML and CSS: Using Vanilla JavaScript and jQuery
 
 ## The DOM: Document Object Model
