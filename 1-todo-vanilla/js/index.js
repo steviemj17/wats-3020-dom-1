@@ -25,12 +25,6 @@ document.addEventListener("", event => {
 
       //add a click event listener that serves a toggle
       //TODO add click event toggle that strikes out text in label associated with list item
-      newCheckBox.addEventListener("click", function (event) {
-        if (this.nextSibling.style.textDecoration === "line-through") {
-          this.nextSibling.style.textDecoration = ""
-        } else {
-          this.nextSibling.style.textDecoration = "line-through"
-        }
-      })
+
     }
 })

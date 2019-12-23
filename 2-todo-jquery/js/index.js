@@ -19,7 +19,7 @@
       $('.todo-list')[0].appendChild(newItemEl);
 
       //clear user input
-      itemInput.val('')
+      itemInput.val('');
 
       //set up toggle on check box click
       //TODO set up a checkbox toggle to strike out text when clicked
