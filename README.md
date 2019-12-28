@@ -21,7 +21,13 @@ The Final Display is the same for both the #1 & #2 To-Do lists, even though #1 i
 
 ## Topics covered by this Assignment:
 * [MDN Vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [jQuery](https://jquery.com/)
+* [jQuery documentation](https://api.jquery.com/)
+  * [jQuery method, abbreviated as $](https://api.jquery.com/jQuery/)
+  * [jQuery object](https://api.jquery.com/Types/#jQuery)
+  * [jQuery .ready() method](https://api.jquery.com/ready/)
+  * [jQuery .submit() method](https://api.jquery.com/submit/)
+  * [jQuery Attribute Equals Selector](https://api.jquery.com/attribute-equals-selector/)
+  * [jQuery .change() method](https://api.jquery.com/change/)
 * [MDN Script element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 * [MDN JavaScript Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 * [W3 Schools document](https://www.w3schools.com/js/js_htmldom_document.asp)
