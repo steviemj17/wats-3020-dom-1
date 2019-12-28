@@ -1,13 +1,14 @@
 # Tutorials for WATS 3020 DOM 1
 
 ## 1-todo-vanilla
-JavaScript can sometimes finish loading and start running before the actual HTML has finished loading. In order to make sure our code does not start running before that, we will add the `DOMContentLoaded` event.
+JavaScript can sometimes finish loading and start running before the actual HTML has finished loading. In order to make sure our code does not start running before that, we will add the `DOMContentLoaded` event. In addition, we need to make sure that all of the rest of the code is "wrapped" in the event. You will see that the ending }) is already at the end of the .JS file.
 1. TODO add event to listen to when DOM is ready to access
   ```JavaScript
   document.addEventListener("DOMContentLoaded", event => {
+    // all code goes in here
   ```
 
-The biggest thing we need to implement is something that tells the page what to do when the Submit button is clicked. Here, we'll be using the "submit" event for the form. In addition, we need to make sure that all of the rest of the code is "wrapped" in the event. We also want to ensure that the default behavior for a form submit button does not occur.
+The biggest thing we need to implement is something that tells the page what to do when the Submit button is clicked. Here, we'll be using the "submit" event for the form. Like before, we will need to wrap all of the code in this event. We also want to ensure that the default behavior for a form submit button does not occur.
 2. TODO add event listener to signal that user is submitting form
   ```JavaScript
   document.addEventListener("submit", event => {
