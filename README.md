@@ -41,4 +41,5 @@ In order to complete this project successfully, you will need to fulfill these r
 For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. In the alternative, a video walkthrough of the assignment can be found here: **link**.
 
 ## Stretch Goals
-1. 
+1. Complete `3-list` with both ECMAScript standard JavaScript and the JQuery JavaScript library.
+2. Add different styling to the elements on the Done list in `3-list`.
