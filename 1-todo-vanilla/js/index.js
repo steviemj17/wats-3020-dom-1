@@ -1,8 +1,7 @@
 //TODO add event to listen to when DOM is ready to access
-//document.addEventListener("", event => {
-document.addEventListener("DOMContentLoaded", event => {
+{
 //TODO add event listener to signal that user is submitting form
-document.addEventListener("submit", event => {
+  {
     // TODO add code to keep form default submit behavior from occurring
 
     // TODO add a selector that selects the input element with the attribute name equal to "item-input"
