@@ -44,7 +44,12 @@ In order to complete this project successfully, you will need to fulfill these r
 * Using either your `1-todo-vanilla` or `2-todo-jquery` pages as a starting point, copy the files to the `3-list` folder and modify the code such that when you click on the list to indicate done, the item moves to a seprate "Done" list that you'll add to your HTML.  The "Done" list doesn't need to be in the form as it will not change. You can do this using "vanilla" JavaScript or JQuery. 
 
 ## Guide & Tutorial
-For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. In the alternative, a video walkthrough of the assignment can be found here: **link**.
+For assistance on how to proceed with specific components of the assignment, consult this [text tutorial](./tutorials.md) for guidance. In the alternative, a video walkthrough of the assignment can be found [here](https://youtu.be/LpBjmFHO7FY). Timestamps for specific parts of the assignment (with associated links) are as follows:
+* [1:56 - Overview of the To-Do App](https://youtu.be/LpBjmFHO7FY?t=116)
+* [4:50 - Part 1 of 3, `1-todo-vanilla`](https://youtu.be/LpBjmFHO7FY?t=290)
+* [21:26 - Part 2 of 3, `2-todo-jquery`](https://youtu.be/LpBjmFHO7FY?t=1286)
+* [35:28 - Part 3 of 3, `3-list`](https://youtu.be/LpBjmFHO7FY?t=2128)
+
 
 ## Stretch Goals
 1. Complete `3-list` with both ECMAScript standard JavaScript and the JQuery JavaScript library.
