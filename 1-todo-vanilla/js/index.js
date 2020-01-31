@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (itemValue.length !== 0) {
 
       let newItemEl = document.createElement("li");
-      let newCheck = document.createElement("input");
-      newCheck.setAttribute("type", "checkbox");
+      let newCheckBox = document.createElement("input");
+      newCheckBox.setAttribute("type", "checkbox");
       newItemEl.appendChild(newCheck);
       let newLabel = document.createElement("label");
       newLabel.textContent = itemValue;
