@@ -23,10 +23,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       itemInput.value = '';
       newCheckBox.addEventListener("click", function (event) {
 
-        if (this.nextSibling.style.textDecortation == "line-through") {
-          this.nextSibling.style.textDecortation = "";
+        if (this.nextSibling.style.textDecoration == "line-through") {
+          this.nextSibling.style.textDecoration = "";
         } else {
-          this.nextSibling.style.textDecortation = "line-through";
+          this.nextSibling.style.textDecoration = "line-through";
         }
       });
 
