@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     let itemInput = document.querySelector("input[name = 'item-input']");
     let itemValue = itemInput.value;
-    list.appendChild(newItemEl);
+   
 
     if (itemValue.length !== 0) {
 
