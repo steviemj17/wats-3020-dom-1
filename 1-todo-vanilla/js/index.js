@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       let newItemEl = document.createElement("li");
       let newCheckBox = document.createElement("input");
       newCheckBox.setAttribute("type", "checkbox");
-      newItemEl.appendChild(newCheck);
+      newItemEl.appendChild(newCheckBox);
       let newLabel = document.createElement("label");
       newLabel.textContent = itemValue;
       newItemEl.appendChild(newLabel);
@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       newCheckBox.addEventListener("click", function (event) {
 
         if (this.nextSibling.style.textDecortation == "line-through") {
-          this.nextSibling.style.textDecortation == "";
+          this.nextSibling.style.textDecortation = "";
         } else {
-          this.nextSibling.style.textDecortation == "line-through";
+          this.nextSibling.style.textDecortation = "line-through";
         }
       });
 
